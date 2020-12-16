@@ -1,7 +1,7 @@
-package array.easy;
+package array.medium;
 
 /**
- * 旋转数组
+ * 189. 旋转数组
  *
  * @author yclimb
  * @date 2020/12/14
