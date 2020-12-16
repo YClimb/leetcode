@@ -1,7 +1,7 @@
 package linkedlist.medium;
 
 /**
- * 两数相加
+ * 2. 两数相加（链表）
  *
  * @author yclimb
  * @date 2020/12/2
