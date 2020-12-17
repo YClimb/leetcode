@@ -42,6 +42,24 @@ public class LongestDupSubstring {
 
     /**
      * 找出字符串中最长重复子串
+     *
+     * 1.字符串从0开始，递减len个字符串，组成数组
+     * banana
+     * anana
+     * nana
+     * ana
+     * na
+     * a
+     *
+     * 2.排序数组，遍历数组，并比较相邻字符串，记录最大相同长度和相同字符串
+     * a
+     * ana
+     * anana
+     * banana
+     * na
+     * nana
+     *
+     * 3.返回结果 ana
      */
     public static String longestDupSubstring(String s) {
         // 获取所有子字符串
