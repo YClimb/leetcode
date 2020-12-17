@@ -55,7 +55,7 @@ public class DeleteNode {
                 tail = tail.next;
             }
         }
-        deleteNode(head, new ListNode(3));
+        deleteNode(head, 3);
         // 循环输出
         while (head != null) {
             System.out.println(head.val);
@@ -63,10 +63,10 @@ public class DeleteNode {
         }
     }
 
-    public static void deleteNode(ListNode head, ListNode node) {
+    public static void deleteNode(ListNode head, int node) {
         // 循环赋值，在方法内修改了值，在方法外也会修改
         while (head != null) {
-            if (head.val == node.val) {
+            if (head.val == node) {
                 head.val = head.next.val;
                 head.next = head.next.next;
                 break;
