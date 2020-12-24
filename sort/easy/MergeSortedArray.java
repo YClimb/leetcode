@@ -50,7 +50,8 @@ public class MergeSortedArray {
     private static void test() {
         int[] nums1 = new int[]{1,2,3,0,0,0};
         int[] nums2 = new int[]{2,5,6};
-        merge(nums1, 3, nums2, 3);
+        //merge(nums1, 3, nums2, 3);
+        merge2(nums1, 3, nums2, 3);
         for (int i : nums1) {
             System.out.println(i);
         }
@@ -61,6 +62,21 @@ public class MergeSortedArray {
      */
     public static void merge(int[] nums1, int m, int[] nums2, int n) {
         System.arraycopy(nums2, 0, nums1, m, n);
+        Arrays.sort(nums1);
+    }
+
+    /**
+     * 1.将 num2 依次写入 num1 的末尾
+     * 1,2,3,0,0,6
+     * 1,2,3,0,5,6
+     * 1,2,3,2,5,6
+     *
+     * 2.然后进行排序
+     */
+    public static void merge2(int[] nums1, int m, int[] nums2, int n) {
+        for (int i = nums2.length - 1; i >= 0; i--) {
+            nums1[m + i] = nums2[i];
+        }
         Arrays.sort(nums1);
     }
 }
