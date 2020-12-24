@@ -1,7 +1,6 @@
 package string.easy;
 
-import java.util.HashMap;
-import java.util.Map;
+import java.util.*;
 
 /**
  * 387. 字符串中的第一个唯一字符
@@ -38,8 +37,9 @@ public class FirstUniqChar {
      * 著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
      */
     private static void test() {
-        String s = "loveleetcode";
+        String s = "aadadaad";
         int result = firstUniqChar(s);
+        //int result = firstUniqChar2(s);
         System.out.println(result);
     }
 
@@ -61,4 +61,20 @@ public class FirstUniqChar {
         }
         return -1;
     }
+
+    /*public static int firstUniqChar2(String s) {
+        char[] arr = s.toCharArray();
+        Map<Character, Integer> tmp = new LinkedHashMap<>(arr.length);
+        for (int i = 0; i < arr.length; i++) {
+            if (tmp.containsKey(arr[i])) {
+                tmp.remove(arr[i]);
+            } else {
+                tmp.put(arr[i], i);
+            }
+        }
+        if (tmp.size() == 0) {
+            return -1;
+        }
+        return tmp.entrySet().iterator().next().getValue();
+    }*/
 }
