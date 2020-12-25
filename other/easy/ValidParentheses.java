@@ -1,4 +1,4 @@
-package string.easy;
+package other.easy;
 
 import java.util.ArrayDeque;
 import java.util.Deque;
