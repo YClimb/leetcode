@@ -65,8 +65,8 @@ public class FibonacciNumber {
      * https://leetcode-cn.com/problems/fibonacci-number/solution/fei-bo-na-qi-shu-by-leetcode-solution-o4ze/
      */
     public static int fib2(int n) {
-        if (n == 2 || n == 1) {
-            return 1;
+        if (n < 2) {
+            return n;
         }
         // 用三个数来记录[前、中、后]数字，返回 n 次循环后的最后的一个数字即可
         int prev = 1, curr = 1;
