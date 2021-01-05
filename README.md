@@ -17,6 +17,8 @@ LeetCode 算法题解
 │   │   ├── RemoveDuplicates.java
 │   │   ├── SingleNumber.java
 │   │   └── TwoSum.java
+│   ├── hard
+│   │   └── MaxProfit_IV.java
 │   └── medium
 │       └── RotateArray.java
 ├── linkedlist
@@ -28,9 +30,25 @@ LeetCode 算法题解
 │   └── medium
 │       ├── AddTwoNumbers.java
 │       └── RemoveNthFromEnd.java
+├── math
+│   └── easy
+│       ├── FizzBuzz.java
+│       └── PowerOfThree.java
+├── other
+│   └── easy
+│       ├── FibonacciNumber.java
+│       ├── HammingDistance.java
+│       ├── MissingNumber.java
+│       └── ValidParentheses.java
+├── search
+├── sort
+│   └── easy
+│       └── MergeSortedArray.java
+├── stack
+│   └── easy
+│       └── StackUsingQueues.java
 ├── string
 │   ├── easy
-│   │   ├── BracketDemo.java
 │   │   ├── CountAndSay.java
 │   │   ├── FirstUniqChar.java
 │   │   ├── ImplementStrstr.java
@@ -47,7 +65,9 @@ LeetCode 算法题解
 │       └── StringToIntegerAtoi.java
 ├── test
 │   ├── Demo.java
+│   └── Demo1.java
 └── tree
     └── easy
-        └── MaxDepth.java
+        ├── MaxDepth.java
+        └── SortTreeNode.java
 ```
