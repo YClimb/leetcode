@@ -1,12 +1,12 @@
 package array.easy;
 
 /**
- * 买卖股票的最佳时机 II
+ * 122. 买卖股票的最佳时机 II
  *
  * @author yclimb
  * @date 2020/12/9
  */
-public class MaxProfit {
+public class MaxProfit_II {
     public static void main(String[] args) {
         test1();
     }
@@ -38,6 +38,7 @@ public class MaxProfit {
      *
      * 作者：力扣 (LeetCode)
      * 链接：https://leetcode-cn.com/leetbook/read/top-interview-questions-easy/x2zsx1/
+     * 链接：https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-ii/
      * 来源：力扣（LeetCode）
      * 著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
      */
